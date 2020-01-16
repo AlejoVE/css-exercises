@@ -66,8 +66,8 @@ body {
 
 
 /* Media queries */
-@media screen (max-width: 600px) {
-  .box (max-width: 600px){
+@media(max-width: 600px) {
+  aside {
     float: left;
     width: 100%;
   }
