@@ -63,3 +63,14 @@ body {
   margin-right: auto;
   max-width: 56em;
 }
+
+
+/* Media queries */
+@media screen (max-width: 600px) {
+  .box (max-width: 600px){
+    float: left;
+    width: 100%;
+  }
+
+
+}
