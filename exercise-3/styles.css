@@ -1,7 +1,52 @@
 body {
   margin: 0;
+  background: darkslategray;
+  display: flex;
+  min-height: 100vh; /* This is so that the body always has 100% of the window */
 }
 
 * {
   box-sizing: border-box;
+}
+
+.slider{
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.slider img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.4s;
+  
+}
+
+.slider input[type="radio"]{
+  position: relative;
+  z-index: 50;
+  margin: 10px;
+}
+
+.slider input[type="radio"]:checked ~ img{
+  opacity: 1;
+
+}
+
+#container{
+  background-color: slategray;
+  width:100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
 }
